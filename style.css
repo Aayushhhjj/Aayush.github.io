@@ -48,11 +48,10 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 transform: scale(1.1);
 box-shadow: 0 0 20px rgba(123, 47, 247, 0.7);
 }
-/* Character animations */
 .character {
     position: fixed;
-    bottom: -200px; /* start off-screen */
-    width: 150px;
+    bottom: -300px;
+    width: 200px;
     z-index: 10;
     opacity: 0;
     transition: transform 1s ease-out, opacity 1s ease-out;
@@ -68,29 +67,18 @@ box-shadow: 0 0 20px rgba(123, 47, 247, 0.7);
     animation: popRight 1.5s forwards;
 }
 
-/* Animations */
+/* Staggered animations */
+.character-left:nth-of-type(1) { animation-delay: 0.2s; }
+.character-left:nth-of-type(2) { animation-delay: 0.6s; }
+.character-right:nth-of-type(3) { animation-delay: 0.4s; }
+.character-right:nth-of-type(4) { animation-delay: 0.8s; }
+
 @keyframes popLeft {
-    0% {
-        bottom: -200px;
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    100% {
-        bottom: 30px;
-        opacity: 1;
-        transform: scale(1);
-    }
+    0% { bottom: -300px; opacity: 0; transform: scale(0.5); }
+    100% { bottom: 50px; opacity: 1; transform: scale(1); }
 }
 
 @keyframes popRight {
-    0% {
-        bottom: -200px;
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    100% {
-        bottom: 30px;
-        opacity: 1;
-        transform: scale(1);
-    }
+    0% { bottom: -300px; opacity: 0; transform: scale(0.5); }
+    100% { bottom: 50px; opacity: 1; transform: scale(1); }
 }
