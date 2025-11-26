@@ -1,51 +1,60 @@
-<h1>My Favourite Movies & Shows</h1>
-<p>Work in progress...</p>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Aayush’s Favourite Movies & Shows</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h1>Aayush’s Favourite Movies & Shows</h1>
-    <h2>Movies</h2>
-    <ul>
-        <li>…add your favourite movies here…</li>
-    </ul>
-
-    <h2>Shows / Anime</h2>
-    <ul>
-        <li>…add shows/anime here…</li>
-    </ul>
-</body>
-</html>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Aayush’s Favourite Movies & Shows</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        h1 { margin-bottom: 10px; }
-        h2 { margin-top: 30px; }
-        ul { font-size: 18px; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin: 30px 0 10px;
+            border-left: 4px solid #4ade80;
+            padding-left: 10px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 18px;
+            border: 1px solid #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Aayush’s Favourite Movies & Shows</h1>
+    <div class="container">
 
-    <h2>Movies</h2>
-    <ul>
-        <li>Interstellar</li>
-        <li>Whiplash</li>
-        <li>Your Name</li>
-    </ul>
+        <div class="section-title">Movies</div>
+        <div class="card">Interstellar</div>
+        <div class="card">Whiplash</div>
+        <div class="card">Your Name</div>
 
-    <h2>Shows / Anime</h2>
-    <ul>
-        <li>Bunny Girl Senpai</li>
-        <li>Horimiya</li>
-        <li>ReLIFE</li>
-    </ul>
+        <div class="section-title">Shows / Anime</div>
+        <div class="card">Bunny Girl Senpai</div>
+        <div class="card">Horimiya</div>
+        <div class="card">ReLIFE</div>
+
+    </div>
 </body>
 </html>
